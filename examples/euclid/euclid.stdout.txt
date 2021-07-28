@@ -1,0 +1,4 @@
+Please enter the first number: 
+Please enter the second number: 
+
+euclid(1071, 1029) = 21

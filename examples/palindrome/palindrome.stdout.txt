@@ -1,0 +1,2 @@
+Please enter a number:
+4321234 is a palindrome.

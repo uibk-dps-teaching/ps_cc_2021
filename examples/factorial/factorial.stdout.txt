@@ -1,0 +1,2 @@
+Please enter a number: 
+The factorial of 5 is 120

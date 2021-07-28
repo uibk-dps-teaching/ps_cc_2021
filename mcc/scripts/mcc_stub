@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# This script emulates the behaviour of the mC compiler. Please note that
+# multilib support for GCC is required as we are explicitly targeting X86.
+#
+# Call it like this:
+#
+#     ./mcc_stub -o fib fib.mc
+#
+# Its purpose is to aid the development of the integration test script while
+# the actual compiler is not working.
+
+set -eu
+
+readonly SCRIPTS_DIR="$(dirname "$(readlink -f "$0")")"
+
+readonly input=$3
+readonly output=$2
+
+"$SCRIPTS_DIR/mc_to_c" "$input" > "$output.c"
+
+gcc -m32 -I"$SCRIPTS_DIR/../resources" -o "$output" "$output.c"

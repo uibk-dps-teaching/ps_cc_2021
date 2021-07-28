@@ -1,0 +1,20 @@
+digraph "CFG" {
+    nodesep=0.6;
+    node [shape=box, fontname="Inconsolata", fontsize=11];
+    edge [fontname="Roboto"];
+
+    B1 [xlabel="B1", label="s = 0\li = 0\ln = 10\l"];
+    B2 [xlabel="B2", label="t1 = a - b\lifz t1 goto B4\l"];
+    B3 [xlabel="B3", label="t2 = i * 4\ls  = s + t2\l"];
+    B4 [xlabel="B4", label="s = s + i"];
+    B5 [xlabel="B5", label="i  = i + 1\lt3 = n - i\lifnz t3 goto B2\l"];
+    B6 [xlabel="B6", label="t4 = a - b"];
+
+    B1 -> B2;
+    B2 -> B3 [label="F"];
+    B2 -> B4 [label="T"];
+    B3 -> B5;
+    B4 -> B5;
+    B5 -> B6 [label="F"];
+    B5 -> B2 [label="T"];
+}

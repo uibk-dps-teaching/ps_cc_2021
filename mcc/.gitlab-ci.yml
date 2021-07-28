@@ -1,0 +1,39 @@
+image: ubuntu:groovy
+
+before_script:
+  - apt-get update -qq && apt-get install -y -qq gcc gcc-multilib meson valgrind time
+
+stages:
+  - Build
+  - Test
+
+Build:
+  stage: Build
+  artifacts:
+    paths:
+      - builddir/
+  script:
+    - CFLAGS=-Werror meson builddir --buildtype=debug
+    - meson compile -v -C builddir
+
+UnitTests:
+  stage: Test
+  dependencies:
+    - Build
+  script:
+    - meson test -v -C builddir
+
+UnitTestsLeaks:
+  stage: Test
+  dependencies:
+    - Build
+  script:
+    - meson test --wrapper 'valgrind --error-exitcode=1 --leak-check=full --track-origins=yes' -v -C builddir
+
+#IntegrationTests:
+#  stage: Test
+#  dependencies:
+#    - Build
+#  script:
+#    - cd builddir
+#    - ../scripts/run_integration_tests

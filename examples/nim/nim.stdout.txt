@@ -1,0 +1,28 @@
+NIM: The match stick game
+.........................
+Size of the match stick pile: 15
+Who should start the game? 0 for You 1 for Computer
+Size of the match stick pile: 15
+How many match sticks do you want to take away? Between 1 and 3.
+Invalid move. You must take between 1 and 3 match sticks. But you tried to take 14 match sticks
+Size of the match stick pile: 15
+How many match sticks do you want to take away? Between 1 and 3.
+You removed: 2
+Size of the match stick pile: 13
+Computer removed: 2
+Size of the match stick pile: 11
+How many match sticks do you want to take away? Between 1 and 3.
+You removed: 2
+Size of the match stick pile: 9
+Computer removed: 2
+Size of the match stick pile: 7
+How many match sticks do you want to take away? Between 1 and 3.
+You removed: 2
+Size of the match stick pile: 5
+Computer removed: 2
+Size of the match stick pile: 3
+How many match sticks do you want to take away? Between 1 and 3.
+You removed: 2
+Size of the match stick pile: 1
+Computer removed: 1
+Human wins.

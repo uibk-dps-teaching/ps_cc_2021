@@ -1,0 +1,21 @@
+Enter Envelope Attack value between 0 and 1 (infinity): 
+Enter Envelope Release value between 0 and 1 (infinity): 
+Resulting Envelope Follower:
+
+################################                                
+                      oooooooooo                                
+                 ooooo          o                               
+              ooo                o                              
+            oo                                                  
+          oo                      o                             
+        oo                         o                            
+       o                            o                           
+      o                              o                          
+    oo                                oo                        
+   o                                    o                       
+                                         oo                     
+  o                                        ooo                  
+ o                                            ooo               
+o                                                ooooo          
+                                                      oooooooooo
+--------------------------------################################

@@ -1,0 +1,25 @@
+Battery voltage: Resistor value: Capictor value: Time step: Number of iterations: Capacitor voltage after 0.00s: 0.00
+Capacitor voltage after 0.00s: 1.20
+Capacitor voltage after 0.00s: 2.28
+Capacitor voltage after 0.00s: 3.25
+Capacitor voltage after 0.00s: 4.13
+Capacitor voltage after 0.00s: 4.91
+Capacitor voltage after 0.00s: 5.62
+Capacitor voltage after 0.00s: 6.26
+Capacitor voltage after 0.00s: 6.83
+Capacitor voltage after 0.00s: 7.35
+Capacitor voltage after 0.00s: 7.82
+Capacitor voltage after 0.00s: 8.23
+Capacitor voltage after 0.00s: 8.61
+Capacitor voltage after 0.00s: 8.95
+Capacitor voltage after 0.00s: 9.25
+Capacitor voltage after 0.00s: 9.53
+Capacitor voltage after 0.00s: 9.78
+Capacitor voltage after 0.00s: 10.00
+Capacitor voltage after 0.00s: 10.20
+Capacitor voltage after 0.00s: 10.38
+Capacitor voltage after 0.00s: 10.54
+Capacitor voltage after 0.00s: 10.69
+Capacitor voltage after 0.00s: 10.82
+Capacitor voltage after 0.00s: 10.94
+Capacitor voltage after 0.00s: 11.04

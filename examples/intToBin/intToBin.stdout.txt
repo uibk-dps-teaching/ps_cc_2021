@@ -1,0 +1,4 @@
+Enter a non-negative integer (1 of 3): Enter a non-negative integer (2 of 3): Enter a non-negative integer (3 of 3): 
+Binary representation of 42: 101010
+Binary representation of 255: 11111111
+Binary representation of 150595: 100100110001000011

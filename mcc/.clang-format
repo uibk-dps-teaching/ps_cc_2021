@@ -1,0 +1,13 @@
+---
+BasedOnStyle: LLVM
+ColumnLimit: 120
+IndentWidth: 8
+UseTab: ForIndentation
+BreakBeforeBraces: Linux
+
+AlignEscapedNewlines: DontAlign
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: false
+BinPackParameters: false
+IndentCaseLabels: false
+...

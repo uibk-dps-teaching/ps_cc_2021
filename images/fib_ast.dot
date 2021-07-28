@@ -1,0 +1,41 @@
+digraph "fib.gib_fib" {
+    nodesep=0.6;
+    node [shape=box, fontname="Inconsolata"];
+    edge [fontname="Roboto"];
+
+    "0x7f8e60a5db10" [label="int fib(int n)"];
+    "0x7f8e60a5db10" -> "0x7f8e60a5db50" [label="body"];
+    "0x7f8e60a5db50" [label="{  }"];
+    "0x7f8e60a3d000" [label="if"];
+    "0x7f8e60a251e0" [label=" < "];
+    "0x7f8e60a250f0" [label="n"];
+    "0x7f8e60a251e0" -> "0x7f8e60a250f0" [label="left"];
+    "0x7f8e60a25140" [label="2"];
+    "0x7f8e60a251e0" -> "0x7f8e60a25140" [label="right"];
+    "0x7f8e60a3d000" -> "0x7f8e60a251e0" [label="cond"];
+    "0x7f8e60a220f0" [label="return"];
+    "0x7f8e60a25190" [label="n"];
+    "0x7f8e60a220f0" -> "0x7f8e60a25190" [label="expr"];
+    "0x7f8e60a3d000" -> "0x7f8e60a220f0" [label="on_true"];
+    "0x7f8e60a5db50" -> "0x7f8e60a3d000" [label="0"];
+    "0x7f8e60a3d030" [label="Return"];
+    "0x7f8e60a254b0" [label=" + "];
+    "0x7f8e60a252d0" [label="fib()"];
+    "0x7f8e60a253c0" [label=" - "];
+    "0x7f8e60a25460" [label="n"];
+    "0x7f8e60a253c0" -> "0x7f8e60a25460" [label="left"];
+    "0x7f8e60a25320" [label="1"];
+    "0x7f8e60a253c0" -> "0x7f8e60a25320" [label="right"];
+    "0x7f8e60a252d0" -> "0x7f8e60a253c0" [label="0"];
+    "0x7f8e60a254b0" -> "0x7f8e60a252d0" [label="left"];
+    "0x7f8e60a25230" [label="fib()"];
+    "0x7f8e60a25280" [label=" - "];
+    "0x7f8e60a25410" [label="n"];
+    "0x7f8e60a25280" -> "0x7f8e60a25410" [label="left"];
+    "0x7f8e60a25370" [label="2"];
+    "0x7f8e60a25280" -> "0x7f8e60a25370" [label="right"];
+    "0x7f8e60a25230" -> "0x7f8e60a25280" [label="0"];
+    "0x7f8e60a254b0" -> "0x7f8e60a25230" [label="right"];
+    "0x7f8e60a3d030" -> "0x7f8e60a254b0" [label="expr"];
+    "0x7f8e60a5db50" -> "0x7f8e60a3d030" [label="1"];
+}

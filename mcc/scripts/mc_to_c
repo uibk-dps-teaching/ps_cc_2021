@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# This is a *best-effort* conversion script translating mC to C.
+#
+# The most notable issue is that functions must be defined before they can be
+# used (as in regular C).
+
+set -eu
+
+# Add header
+echo '#include <stdbool.h>'
+echo '#include "mc_builtins.c"'
+echo 'typedef const char* string;'
+
+# Translate custom array syntax
+sed -r 's/(int|float|bool|string)(\[[[:digit:]]+\])\s+(\w+)/\1 \3\2/g' "$@"
