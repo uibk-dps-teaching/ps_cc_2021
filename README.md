@@ -42,7 +42,7 @@ The proseminar takes place online [over at Twitch](https://www.twitch.tv/AlexWar
 Host your code on the University GitLab and add me as developer to your repository.
 
 Furthermore, it is required to set up GitLab CI to automatically build and test your code.
-The getting started code-base comes with a basic [`.gitlab-ci.yml`](mcc/blob/master/.gitlab-ci.yml).
+The getting started code-base comes with a basic [`.gitlab-ci.yml`](mcc/.gitlab-ci.yml).
 
 ### Programming Language
 
